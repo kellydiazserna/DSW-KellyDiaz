@@ -1,0 +1,68 @@
+header{
+    background-color: #3A3845;
+    color: rgb(252, 252, 252);
+    padding: 5%;
+    
+}
+nav{
+    background-color: #F7CCAC;
+    color: rgb(14, 13, 13);
+    
+}
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+article{
+    background-color: #C69B7B;
+    grid-column: 1/4;
+}
+aside{
+    background-color: #81654f;
+    padding: 10%;
+    grid-column: 4/5;
+}
+footer{
+    background-color: #826F66;
+    color: rgb(12, 12, 12);
+    padding: 2%;
+}
+
+.menu{
+    padding: 0px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+.menu>li{
+    float: left;
+}
+.menu li a{
+    background-color: #F7CCAC;
+    color: black;
+    text-decoration: none;
+    padding: 20px 80px;
+    display: block;
+}
+.menu li a:hover{
+    background-color: #826F66;
+}
+.menu li ul{
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    min-width: 140px;
+}
+.menu li:hover > ul{
+    display: block;
+}
+.menu li ul li{
+    position: relative;
+}
+.menu li ul li ul{
+    right: 140px;
+}
